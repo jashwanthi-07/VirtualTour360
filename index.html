@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VistaVR - Explore Beyond</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="#home" class="logo">Vista<span>VR</span></a>
+
+    <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#destinations" class="nav-button">Explore Tours ↗</a>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="hero-tag">✦ DISCOVER THE WORLD DIFFERENTLY</p>
+
+        <h1>Explore the world.<br>
+            <span>Without limits.</span>
+        </h1>
+
+        <p>
+            Travel to extraordinary places from wherever you are.
+            Discover the magic of immersive virtual tours.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#destinations" class="primary-button">
+                Explore Destinations ↗
+            </a>
+
+            <a href="#about" class="secondary-button">
+                Discover VistaVR
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+    <div class="container about-grid">
+
+        <div>
+            <p class="section-tag">A NEW WAY TO EXPLORE</p>
+
+            <h2 class="section-title">
+                Travel beyond<br>your imagination.
+            </h2>
+
+            <p class="description">
+                VistaVR brings the world's most beautiful places to
+                your screen. Explore famous landmarks, peaceful forests
+                and breathtaking landscapes through virtual tours.
+            </p>
+
+            <ul class="about-list">
+                <li>Explore places from anywhere</li>
+                <li>Discover amazing destinations</li>
+                <li>Enjoy an interactive visual experience</li>
+            </ul>
+
+            <a href="#destinations" class="primary-button">
+                Start Exploring ↗
+            </a>
+        </div>
+
+        <img class="about-image"
+        src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1000&q=85"
+        alt="Beautiful nature landscape">
+    </div>
+</section>
+
+<!-- STATISTICS -->
+<section class="stats">
+    <div class="container stats-grid">
+        <div><h3>50+</h3><p>Destinations</p></div>
+        <div><h3>360°</h3><p>Visual Exploration</p></div>
+        <div><h3>24/7</h3><p>Explore Anytime</p></div>
+        <div><h3>100%</h3><p>Discover from Home</p></div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features-section" id="features">
+    <div class="container">
+        <p class="section-tag">WHY VISTAVR</p>
+        <h2 class="section-title">A better way to see the world.</h2>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🌍</div>
+                <h3>Explore Anywhere</h3>
+                <p>Discover interesting places without travelling far.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">👁️</div>
+                <h3>Visual Discovery</h3>
+                <p>Enjoy beautiful photographs of amazing destinations.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Easy Access</h3>
+                <p>Explore destinations on your phone or computer.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- DESTINATIONS -->
+<section class="destinations-section" id="destinations">
+    <div class="container">
+        <p class="section-tag">YOUR NEXT ADVENTURE</p>
+
+        <h2 class="section-title">Explore destinations.</h2>
+
+        <p class="description">
+            From quiet forests to iconic architecture,
+            find a place that makes you curious.
+        </p>
+
+        <div class="destination-filters">
+            <button class="filter-button active" data-filter="all">
+                All destinations
+            </button>
+
+            <button class="filter-button" data-filter="nature">
+                🌿 Nature
+            </button>
+
+            <button class="filter-button" data-filter="culture">
+                🏛️ Culture
+            </button>
+
+            <button class="filter-button" data-filter="architecture">
+                🏔️ Architecture
+            </button>
+        </div>
+
+        <div class="destination-grid">
+
+            <article class="destination-card" data-category="nature">
+                <div class="destination-image">
+                    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1000&q=85"
+                    alt="Enchanted forest">
+
+                    <span class="destination-label">🌿 Nature</span>
+                </div>
+
+                <div class="destination-content">
+                    <div class="card-heading">
+                        <h3>Enchanted Forest</h3>
+                        <span>◷ 5 min</span>
+                    </div>
+
+                    <p>Ancient woodland · Earth</p>
+
+                    <div class="destination-footer">
+                        <span>Peaceful green escape</span>
+                        <button class="tour-button">Take the tour ↗</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="destination-card" data-category="culture">
+                <div class="destination-image">
+                    <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1000&q=85"
+                    alt="Taj Mahal">
+
+                    <span class="destination-label">🏛️ Culture</span>
+                </div>
+
+                <div class="destination-content">
+                    <div class="card-heading">
+                        <h3>Taj Mahal</h3>
+                        <span>◷ 7 min</span>
+                    </div>
+
+                    <p>Agra · India</p>
+
+                    <div class="destination-footer">
+                        <span>A wonder of the world</span>
+                        <button class="tour-button">Take the tour ↗</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="destination-card" data-category="nature">
+                <div class="destination-image">
+                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1000&q=85"
+                    alt="Mountain landscape">
+
+                    <span class="destination-label">🏔️ Nature</span>
+                </div>
+
+                <div class="destination-content">
+                    <div class="card-heading">
+                        <h3>Alpine Escape</h3>
+                        <span>◷ 6 min</span>
+                    </div>
+
+                    <p>Mountain paradise · Alps</p>
+
+                    <div class="destination-footer">
+                        <span>Peaceful mountain views</span>
+                        <button class="tour-button">Take the tour ↗</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="destination-card" data-category="architecture">
+                <div class="destination-image">
+                    <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1000&q=85"
+                    alt="City at night">
+
+                    <span class="destination-label">🏙️ Architecture</span>
+                </div>
+
+                <div class="destination-content">
+                    <div class="card-heading">
+                        <h3>City Lights</h3>
+                        <span>◷ 4 min</span>
+                    </div>
+
+                    <p>Urban adventure · Earth</p>
+
+                    <div class="destination-footer">
+                        <span>Discover city life</span>
+                        <button class="tour-button">Take the tour ↗</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="destination-card" data-category="nature">
+                <div class="destination-image">
+                    <img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1000&q=85"
+                    alt="Coastal landscape">
+
+                    <span class="destination-label">🌿 Nature</span>
+                </div>
+
+                <div class="destination-content">
+                    <div class="card-heading">
+                        <h3>Coastal Villages</h3>
+                        <span>◷ 5 min</span>
+                    </div>
+
+                    <p>Coastal paradise · Earth</p>
+
+                    <div class="destination-footer">
+                        <span>Relax beside the sea</span>
+                        <button class="tour-button">Take the tour ↗</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="destination-card" data-category="architecture">
+                <div class="destination-image">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85"
+                    alt="Modern architectural design">
+
+                    <span class="destination-label">🏛️ Architecture</span>
+                </div>
+
+                <div class="destination-content">
+                    <div class="card-heading">
+                        <h3>Design Wonders</h3>
+                        <span>◷ 6 min</span>
+                    </div>
+
+                    <p>Modern architecture · Earth</p>
+
+                    <div class="destination-footer">
+                        <span>Discover creative spaces</span>
+                        <button class="tour-button">Take the tour ↗</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-section">
+    <div class="container">
+        <p class="section-tag">SIMPLE AND EASY</p>
+        <h2 class="section-title">Your journey in three steps.</h2>
+
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-number">01</div>
+                <h3>Choose a destination</h3>
+                <p>Browse the collection and choose your favourite place.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">02</div>
+                <h3>Start your tour</h3>
+                <p>Open the tour window and explore the destination image.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">03</div>
+                <h3>Enjoy the experience</h3>
+                <p>Discover beautiful places from wherever you are.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+    <div class="container contact-grid">
+
+        <div class="contact-card">
+            <p class="section-tag">WE'RE HERE TO HELP</p>
+
+            <h2 class="section-title">Contact Us</h2>
+
+            <div class="title-line"></div>
+
+            <p class="contact-intro">
+                Interested in creating or exploring a virtual tour?
+                Get in touch.
+            </p>
+
+            <div class="contact-detail">
+                <span>✉️</span>
+                <strong>Email</strong>
+                <a href="mailto:vrtours@example.com">vrtours@example.com</a>
+            </div>
+
+            <div class="contact-detail">
+                <span>📞</span>
+                <strong>Phone</strong>
+                <a href="tel:+919876543210">+91 98765 43210</a>
+            </div>
+
+            <div class="contact-detail">
+                <span>🌐</span>
+                <strong>Service</strong>
+                <span>Virtual Tour Platform</span>
+            </div>
+
+            <p class="demo-note">
+                Demo contact details — replace the sample email and
+                phone number with your real contact information before publishing.
+            </p>
+        </div>
+
+        <form class="contact-form">
+            <label for="fullname">Full name</label>
+            <input type="text" id="fullname" placeholder="Enter your name" required>
+
+            <label for="email">Email address</label>
+            <input type="email" id="email" placeholder="you@example.com" required>
+
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" placeholder="+91 98765 43210">
+
+            <label for="place">Place you want to visit</label>
+            <input type="text" id="place" placeholder="e.g. Taj Mahal, Agra" required>
+
+            <label for="message">Message (optional)</label>
+            <textarea id="message" placeholder="Tell us what kind of tour you are interested in"></textarea>
+
+            <button type="submit" class="submit-button">
+                Submit details ↗
+            </button>
+
+            <p class="form-note">
+                Demo form: details are not sent to a server or stored.
+            </p>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container footer-content">
+        <a href="#home" class="logo">Vista<span>VR</span></a>
+        <p>VistaVR © 2026 · Explore more. Imagine further.</p>
+        <a href="#home">Back to top ↑</a>
+    </div>
+</footer>
+
+<!-- TOUR POPUP -->
+<div class="tour-modal">
+    <div class="tour-modal-content">
+        <div class="tour-modal-header">
+            <h3 id="tour-title">Virtual tour</h3>
+            <button class="close-tour" aria-label="Close tour">&times;</button>
+        </div>
+
+        <div class="tour-viewer">
+            <img class="tour-panorama" src="" alt="Destination view">
+        </div>
+
+        <p class="tour-instructions">
+            Drag to look around. Swipe on mobile.
+        </p>
+    </div>
+</div>
+
+<!-- SUCCESS POPUP -->
+<div class="success-modal">
+    <div class="success-content">
+        <div class="success-icon">✓</div>
+        <h3>Thank you!</h3>
+        <p>Your demo form has been submitted successfully.</p>
+        <button class="close-success">Close</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

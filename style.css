@@ -1,0 +1,750 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #f7f6f0;
+    color: #19372c;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    padding: 85px 0;
+}
+
+.section-tag {
+    color: #668674;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.description {
+    color: #727c75;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+/* NAVIGATION */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 22px 5%;
+    background: #f7f6f0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #e4e5dd;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #93a963;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    font-size: 14px;
+    color: #42564a;
+}
+
+.nav-links a:hover {
+    color: #819a54;
+}
+
+.nav-button,
+.primary-button {
+    display: inline-block;
+    background: #173f32;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    padding: 90px 8%;
+    color: white;
+    background:
+        linear-gradient(90deg, rgba(13, 39, 29, .85), rgba(13, 39, 29, .2)),
+        url('https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1800&q=85');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 680px;
+}
+
+.hero-tag {
+    display: inline-block;
+    border: 1px solid #d0dfbd;
+    border-radius: 30px;
+    padding: 8px 15px;
+    color: #dce9c8;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 6vw, 75px);
+    line-height: 1.12;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #c9dca4;
+    font-style: italic;
+}
+
+.hero-content > p:not(.hero-tag) {
+    max-width: 530px;
+    color: #e8eee8;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.hero .primary-button {
+    background: #c5d99b;
+    color: #19372c;
+}
+
+.secondary-button {
+    padding: 12px 22px;
+    border: 1px solid white;
+    border-radius: 30px;
+    color: white;
+}
+
+/* ABOUT */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.about-list {
+    list-style: none;
+    margin: 25px 0 30px;
+}
+
+.about-list li {
+    margin-bottom: 12px;
+}
+
+.about-list li::before {
+    content: "✓";
+    color: #819a54;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+/* STATS */
+
+.stats {
+    background: #193f32;
+    color: white;
+    padding: 45px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    text-align: center;
+}
+
+.stats h3 {
+    font-family: 'Playfair Display', serif;
+    color: #c5d99b;
+    font-size: 38px;
+}
+
+.stats p {
+    color: #dce5dc;
+}
+
+/* FEATURES */
+
+.features-section {
+    background: #edeee6;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #e2e4db;
+    border-radius: 20px;
+}
+
+.feature-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #727c75;
+}
+
+/* DESTINATIONS */
+
+.destination-filters {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 35px 0 45px;
+}
+
+.filter-button {
+    background: transparent;
+    border: 2px solid #dedfd7;
+    color: #53665a;
+    border-radius: 40px;
+    padding: 12px 25px;
+    transition: .2s;
+}
+
+.filter-button.active,
+.filter-button:hover {
+    background: #174334;
+    border-color: #174334;
+    color: white;
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 35px;
+}
+
+.destination-card {
+    background: white;
+    border-radius: 35px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(30, 50, 39, .04);
+}
+
+.destination-image {
+    height: 340px;
+    position: relative;
+    overflow: hidden;
+}
+
+.destination-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .4s;
+}
+
+.destination-card:hover .destination-image img {
+    transform: scale(1.04);
+}
+
+.destination-label {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    padding: 12px 22px;
+    background: rgba(255, 255, 255, .94);
+    color: #19372c;
+    border-radius: 35px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.destination-content {
+    padding: 32px;
+}
+
+.card-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.card-heading h3 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.card-heading span {
+    color: #7c8580;
+    white-space: nowrap;
+}
+
+.destination-content > p {
+    color: #858b86;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.destination-footer {
+    border-top: 1px solid #e8e9e3;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.destination-footer > span {
+    color: #858b86;
+}
+
+.tour-button {
+    border: none;
+    background: transparent;
+    color: #174334;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.tour-button:hover {
+    color: #819a54;
+}
+
+/* HOW IT WORKS */
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.step-card {
+    padding: 25px;
+    border-left: 3px solid #b4cb8a;
+}
+
+.step-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    color: #819a54;
+    margin-bottom: 10px;
+}
+
+.step-card h3 {
+    margin-bottom: 10px;
+}
+
+.step-card p {
+    color: #727c75;
+}
+
+/* CONTACT */
+
+.contact-section {
+    background: #f7f6f0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.contact-card,
+.contact-form {
+    background: white;
+    border: 1px solid #e0e3da;
+    border-radius: 35px;
+    padding: 40px;
+}
+
+.contact-card .section-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.title-line {
+    height: 6px;
+    width: 160px;
+    background: #4268db;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.contact-intro {
+    color: #69716c;
+    font-size: 19px;
+    margin-bottom: 40px;
+}
+
+.contact-detail {
+    display: grid;
+    grid-template-columns: 45px 105px minmax(0, 1fr);
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 28px;
+    font-size: 17px;
+    overflow-wrap: anywhere;
+}
+
+.contact-detail > span:first-child {
+    font-size: 27px;
+}
+
+.contact-detail strong {
+    font-size: 18px;
+}
+
+.contact-detail a,
+.contact-detail > span:last-child {
+    color: #263c31;
+}
+
+.demo-note {
+    color: #858b86;
+    margin-top: 40px;
+    font-size: 15px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form label {
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 7px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    background: #fbfbf9;
+    border: 2px solid #e0e2db;
+    border-radius: 22px;
+    padding: 20px;
+    font-size: 17px;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #8ba66a;
+}
+
+.contact-form textarea {
+    min-height: 170px;
+    resize: vertical;
+}
+
+.submit-button {
+    background: #174334;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 18px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.form-note {
+    color: #858b86;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 30px 0;
+    background: #19372c;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+/* MODALS */
+
+.tour-modal,
+.success-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(10, 25, 17, .85);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.tour-modal.show,
+.success-modal.show {
+    display: flex;
+}
+
+.tour-modal-content,
+.success-content {
+    background: #f7f6f0;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.tour-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.close-tour {
+    background: transparent;
+    border: none;
+    font-size: 32px;
+}
+
+.tour-viewer {
+    height: 450px;
+    overflow: hidden;
+    cursor: grab;
+    touch-action: pan-y;
+}
+
+.tour-panorama {
+    width: 180%;
+    max-width: none;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+}
+
+.tour-instructions {
+    padding: 15px;
+    text-align: center;
+    color: #727c75;
+}
+
+.success-content {
+    max-width: 400px;
+    padding: 35px;
+    text-align: center;
+}
+
+.success-icon {
+    font-size: 45px;
+    color: #638d52;
+}
+
+.success-content h3 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.success-content p {
+    margin-bottom: 20px;
+}
+
+.close-success {
+    background: #174334;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 25px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid,
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .destination-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .destination-image {
+        height: 350px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 55px 0;
+    }
+
+    .hero {
+        min-height: 550px;
+        padding: 60px 6%;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .destination-image {
+        height: 260px;
+    }
+
+    .destination-content {
+        padding: 25px;
+    }
+
+    .card-heading h3 {
+        font-size: 21px;
+    }
+
+    .destination-footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .contact-card,
+    .contact-form {
+        padding: 25px;
+        border-radius: 25px;
+    }
+
+    .contact-card .section-title {
+        font-size: 40px;
+    }
+
+    .contact-detail {
+        grid-template-columns: 35px 1fr;
+    }
+
+    .contact-detail a,
+    .contact-detail > span:last-child {
+        grid-column: 2;
+    }
+
+    .tour-viewer {
+        height: 300px;
+    }
+}
